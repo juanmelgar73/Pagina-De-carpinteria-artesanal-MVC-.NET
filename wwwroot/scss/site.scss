@@ -10,13 +10,13 @@ $verde-menta: #A3B899;
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);
 }
 
-.portada{
+.portada {
     display: flex;
     flex-direction: column;
-    padding:40px;
+    padding: 40px;
     justify-content: center;
 
-    .container{
+    .container {
         padding: 50px;
     }
 
@@ -24,16 +24,16 @@ $verde-menta: #A3B899;
         background-color: $color-madera-detalle;
         font-weight: bold;
         color: $color-secundario;
-        
     }
-    .boton:hover{
+
+    .boton:hover {
         background-color: $color-verde-detalle;
         color: $color-primario;
     }
 }
+
 .navegacion {
     background-color: $color-secundario !important;
-
 
     .container-fluid {
         .icono {
@@ -50,10 +50,10 @@ $verde-menta: #A3B899;
 
                 .link-scss.nav-link {
                     transition: 300ms;
-                    color: $color-primario;
+                    color: $color-primario !important;
 
                     &:hover {
-                        color: $verde-menta;
+                        color: $verde-menta !important;
                     }
                 }
             }
@@ -61,21 +61,37 @@ $verde-menta: #A3B899;
 
         .boton {
             background-color: $color-verde-detalle !important;
+            color: $color-primario !important;
             transition: 300ms;
 
             &:hover {
-                color: $color-secundario;
+                background-color: $verde-menta !important;
             }
         }
     }
 
-    .boton {
+    .buscador {
+        input {
+            border:1px solid gray;
+            border-radius: 20px;
+            padding: 6px 15px;
+            background-color: $color-primario;
+            color: $color-secundario;
+         
+            transition: 300ms;
+
+            &:focus {
+                border-color: $verde-menta;
+            }
+        }
+    }
+
+    > .boton {
         background-color: $color-verde-detalle !important;
-        transition: 300ms;
+        color: $color-primario !important;
 
         &:hover {
-            color: $color-secundario;
+            background-color: $verde-menta !important;
         }
     }
 }
-
