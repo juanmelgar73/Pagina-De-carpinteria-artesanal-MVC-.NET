@@ -7,5 +7,27 @@ $color-verde-detalle: #4A5D4E;
 
 .titulo {
     color: $color-primario;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);
+}
+
+.portada{
+    display: flex;
+    flex-direction: column;
+    padding:40px;
+    justify-content: center;
+
+    .container{
+        padding: 50px;
+    }
+
+    .boton {
+        background-color: $color-madera-detalle;
+        font-weight: bold;
+        color: $color-secundario;
+        
+    }
+    .boton:hover{
+        background-color: $color-verde-detalle;
+        color: $color-primario;
+    }
 }

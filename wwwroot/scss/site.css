@@ -1,4 +1,23 @@
 ﻿.titulo {
   color: #F7F6F2;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);
+}
+
+.portada {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  justify-content: center;
+}
+.portada .container {
+  padding: 50px;
+}
+.portada .boton {
+  background-color: #8B5E34;
+  font-weight: bold;
+  color: #2D2D2D;
+}
+.portada .boton:hover {
+  background-color: #4A5D4E;
+  color: #F7F6F2;
 }
