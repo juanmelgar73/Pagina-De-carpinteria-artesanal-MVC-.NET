@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="~/CarpinteriaArtesanal.styles.css" asp-append-version="true" />
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link href="~/scss/site.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -49,7 +48,7 @@
                             </a>
                         </li>
                         <li class="item-scss nav-item">
-                            <a href="#" class="link-scss nav-link">
+                            <a asp-controller="Home" asp-action="Nosotros"  class="link-scss nav-link">
                                 <i class="fa-solid fa-warehouse me-2"></i>
                                 Sobre Nosotros
                             </a>
@@ -64,12 +63,12 @@
 
                     </ul>
 
-                   
 
-                    
-                    <button class="boton me-5 btn btn-primary">
+
+
+                    <a asp-controller="Home" asp-action="Contacto" class="boton me-5 btn btn-primary">
                         <i class="fa-regular fa-user"></i> Contacto
-                    </button>
+                    </a>
                 </div>
              
         </div>
@@ -86,29 +85,7 @@
 
 
 
-    <section class="portada  text-dark">
-        <div class="container">
-
-            <div class="row align-items-center justify-content-center">
-
-                <div class="col col-12 col-md-10  g-3">
-                    <h1 class="titulo fw-bold display-2   text-center mb-5">Bienvenido a Raices Carpinteria</h1>
-
-                </div>
-
-            </div>
-
-        </div>
-        <button class="boton btn btn-success w-25 border rounded-3">
-            Ver Productos
-        </button>
-
-
-    </section>
-
-    <br />
-
-
+    
    
 
 

@@ -17,7 +17,14 @@ namespace CarpinteriaArtesanal.Controllers
         {
             return View();
         }
-
+        public IActionResult Contacto()
+        {
+            return View();
+        }
+        public IActionResult Nosotros()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();

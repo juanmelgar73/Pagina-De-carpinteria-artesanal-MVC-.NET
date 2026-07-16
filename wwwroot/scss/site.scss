@@ -4,6 +4,9 @@ $color-secundario: #2D2D2D;
 $color-madera-detalle: #8B5E34;
 $color-verde-detalle: #4A5D4E;
 $verde-menta: #A3B899;
+$facebook: #1877F2;
+$WHATSAPP:#25D366;
+$INSTAGRAM:#E1306C;
 
 html, body {
     height: 100%;
@@ -31,12 +34,10 @@ main[role="main"] {
 .portada {
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 80px;
     background-image: url('../img/carpinteriafinal.png');
     background-size:cover;
-    height:500px;
     
-    margin-bottom: 60px;
     align-items: center;
     
    
@@ -117,15 +118,38 @@ main[role="main"] {
     }
 }
 
+.estadistica
+{
+    .contenedor{
+        .celda{
+           text-align:center;
+          
+        }
+        .tarjeta{
+            border:1px solid gray;
+            border-radius:8px;
+          border-color:$verde-menta;
+          padding:20px;
+          box-shadow:0 4px 8px rgba(0,0,0,0.1);
+          transition:300ms;
 
+          &:hover
+              {
+              transform:translateY(-10px);
+          }
+        }
+       
+    }
+}
 
 // footer
 
+
 .footer {
-    flex-shrink: 0; //
-    position: relative !important; // Rompe el position: absolute de la plantilla
-    bottom: auto !important; //
-    width: 100% !important; //
+    flex-shrink: 0;
+    position: relative !important;
+    bottom: auto !important;
+    width: 100% !important;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -137,16 +161,19 @@ main[role="main"] {
     width: 100%;
 
     .iconosredes {
-        a{
+        a {
             border: 1px solid gray;
-            border-radius: 100px;
-            padding: 10px;
-            color:$color-madera-detalle;
-            i{
+            border-radius: 40px;
+            margin: 5px;
+            padding: 20px;
+            color: $verde-menta;
+
+            i {
                 font-size: 20px;
                 font-weight: bold;
             }
         }
+
         a:hover {
             transition: 0.3s;
             color: $color-verde-detalle;
@@ -154,6 +181,19 @@ main[role="main"] {
         }
     }
 
+    .iconosredes {
+        a:nth-child(1) {
+            color: $INSTAGRAM;
+        }
+
+        a:nth-child(2) {
+            color: $WHATSAPP;
+        }
+
+        a:nth-child(3) {
+            color: $facebook;
+        }
+    }
 
     .contenido-footer {
         display: flex;
@@ -186,5 +226,56 @@ main[role="main"] {
                 }
             }
         }
+    }
+}
+.formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+    .imagenformulario {
+        img {
+            width: 100px;
+            margin: 20px;
+        }
+    }
+
+    .labelusuario {
+        text-transform: uppercase;
+        text-decoration: underline;
+        margin: 9px;
+    }
+
+    #txtUsuario {
+        border: 1px solid gray;
+        border-radius: 90px;
+        padding: 5px;
+    }
+
+    .labelcontra {
+        text-transform: uppercase;
+        text-decoration: underline;
+        margin: 9px;
+    }
+
+    #txtContra {
+        border: 1px solid gray;
+        border-radius: 90px;
+        padding: 5px;
+    }
+
+    .Notas {
+        text-transform: uppercase;
+        text-decoration: underline;
+        margin: 9px;
+    }
+
+    #txtNotas {
+        border: 1px solid gray;
+        border-radius: 10px;
+        width:200px;
+        padding: 5px;
     }
 }
