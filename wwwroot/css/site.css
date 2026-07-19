@@ -209,6 +209,11 @@ main[role=main] {
   height: 600px;
 }
 
+.nosotrossc .info i {
+  width: 120px;
+  padding: 20px;
+  color: #E1306C;
+}
 .nosotrossc .seccionimg img {
   width: 800px;
 }

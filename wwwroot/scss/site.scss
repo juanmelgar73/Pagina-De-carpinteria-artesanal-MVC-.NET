@@ -295,7 +295,15 @@ main[role="main"] {
 //nosotros
 
 .nosotrossc {
-
+    .info{
+        i{
+            width:120px;
+            padding:20px;
+    
+            color:$INSTAGRAM;
+        }
+        
+    }
     .seccionimg {
       img
           {
