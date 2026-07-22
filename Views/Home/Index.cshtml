@@ -110,3 +110,41 @@
 
 </section>
 
+
+<form class="formulario py-5">
+    <h4>Envianos un mensaje</h4>
+    <p class="text-muted mb-4">¿Tenes sugerencias, dudas o un problema? Completa el formulario y nos pondremos en contacto</p>
+    <div class="imagenformulario"> <img src="~/img/logo2.png" /></div>
+
+    <div class="row ">
+       <div class="col-12 col-md-6">
+           <label class="form-label" for="txtNombre">Nombre Completo:</label>
+            <input id="txtNombre" name="txtNombre" class="form-control" type="text" placeholder="Ingresa el nombre" required />
+        </div>
+        <div class="col-12 col-md-6">
+            <label class="form-label" for="txtEmail">Correo electronico</label>
+            <input id="txtEmail" name="txtEmail" class="form-control" type="text" placeholder="Ingresa tu correo" />
+        </div>
+            <div class="col-12  mb-3">
+                <label class="form-label" >Motivo de contacto: </label>
+            <select id="cboAsunto" name="cboAsunto" class="form-select">
+                <option selected disabled>Selecciona una opción</option>
+                <option value="sugerencia">Sugerencia</option>
+                <option value="error">Reportar un error</option>
+                <option value="consulta">Consulta general</option>
+            </select>
+            </div>
+            <div class="col-12 mb-3">
+               <label class="form-label" for="txtMensaje">Ingrese su mensaje o sugerencia: </label>
+               <textarea id="txtMensaje" name="txtMensaje" class="form-control" placeholder="Escribi aca tu sugerencia o mensaje"></textarea>
+ 
+
+</div>
+<div class="col-12 mb-3">
+    <button class="botonformulario btn btn-primary">Enviar</button>
+</div>
+        </div>
+   
+
+
+</form>

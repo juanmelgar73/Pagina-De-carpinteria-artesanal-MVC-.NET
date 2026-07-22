@@ -204,10 +204,10 @@ main[role="main"] {
     }
 }
 
-// Contacto 
+// Contacto
 
 .formulario {
-   margin-left:50px;
+    margin-left: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -221,52 +221,13 @@ main[role="main"] {
         }
     }
 
-    .labelusuario {
-        text-transform: uppercase;
-        text-decoration: underline;
-        margin: 9px;
-    }
 
-    #txtUsuario {
-        display: flex;
-        flex-direction: column;
-        border: 1px solid gray;
-        border-radius: 90px;
-        padding: 5px;
-    }
-
-    .labelcontra {
-        text-transform: uppercase;
-        text-decoration: underline;
-        margin: 9px;
-    }
-
-    #txtContra {
-        display: flex;
-        border: 1px solid gray;
-        border-radius: 90px;
-        padding: 5px;
-    }
-
-    .Notas {
-        text-transform: uppercase;
-        text-decoration: underline;
-        margin: 10px;
-    }
-
-    #txtNotas {
-        border: 1px solid gray;
-        border-radius: 10px;
-        width: 200px;
-        padding: 5px;
-    }
-
-    .imgcliente
-        {
-        width:800px;
-        height:600px;
+    .botonformulario {
+background-color:$color-madera-detalle;
+       
     }
 }
+
 //nosotros
 
 .nosotrossc {
