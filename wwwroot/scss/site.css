@@ -159,15 +159,6 @@ main[role=main] {
   background-color: #8B5E34;
 }
 
-.nosotrossc .info i {
-  width: 120px;
-  padding: 20px;
-  color: #E1306C;
-}
-.nosotrossc .seccionimg img {
-  width: 800px;
-}
-
 .section-productos {
   display: flex;
   flex-direction: column;
@@ -246,4 +237,158 @@ main[role=main] {
 
 .formulario {
   gap: 30px;
+}
+
+.nosotrossc .info {
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.nosotrossc .info h2 {
+  color: #9e5720;
+}
+.nosotrossc .info p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2;
+}
+.nosotrossc .seccionimg img {
+  width: 500px;
+}
+
+.iconos-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin: 50px;
+  gap: 70px;
+}
+.iconos-info .contenedor-iconos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  /*border: 1px solid black;*/
+}
+.iconos-info .contenedor-iconos i {
+  color: #9e5720;
+  cursor: pointer;
+}
+.iconos-info .contenedor-iconos span {
+  color: #2D2D2D;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.iconos-info .boton-info {
+  background-color: transparent;
+  border: 2px solid #2D2D2D;
+  color: #2D2D2D;
+  font-weight: bold;
+  width: 150px;
+}
+.iconos-info .boton-info:hover {
+  background-color: #9e5720;
+  color: #F7F6F2;
+  font-weight: bold;
+}
+
+.cards-mision {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px;
+  gap: 70px;
+}
+.cards-mision .info-mision {
+  text-align: center;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cards-mision .info-mision h2 {
+  color: #9e5720;
+  font-weight: bold;
+}
+.cards-mision .info-mision p {
+  font-weight: 500;
+  font-size: 17px;
+}
+.cards-mision .cartas-contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+}
+.cards-mision .carta {
+  border: 1.5px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 300px;
+  text-align: center;
+  gap: 30px;
+  padding: 10px;
+  height: 250px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.cards-mision .carta p {
+  font-weight: 500;
+}
+.cards-mision .carta:hover {
+  background-color: #2D2D2D;
+  color: #F7F6F2;
+  transition: 0.7s;
+}
+
+.empleados-section {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  text-align: center;
+}
+.empleados-section .empleados-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+  margin: 30px;
+}
+.empleados-section .empleados-info h2 {
+  color: #9e5720;
+  font-weight: bold;
+}
+.empleados-section .empleados-info p {
+  font-weight: 500;
+  font-size: 17px;
+}
+.empleados-section .empleados-contenedor .empleado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.empleados-section .empleados-contenedor .empleado i {
+  font-size: 50px;
+  color: #9e5720;
+}
+.empleados-section .empleados-contenedor .empleado .boton-empleados {
+  background-color: #9e5720;
+  border: none;
+  color: white;
+  width: 150px;
+  border: 2px solid transparent;
+  font-weight: 600;
+}
+.empleados-section .empleados-contenedor .empleado .boton-empleados:hover {
+  background-color: #F7F6F2;
+  color: #2D2D2D;
+  font-weight: 600;
+  border: 2px solid #2D2D2D;
+  transition: 0.5s;
 }

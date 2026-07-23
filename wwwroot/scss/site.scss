@@ -228,25 +228,7 @@ background-color:$color-madera-detalle;
     }
 }
 
-//nosotros
 
-.nosotrossc {
-    .info{
-        i{
-            width:120px;
-            padding:20px;
-    
-            color:$INSTAGRAM;
-        }
-        
-    }
-    .seccionimg {
-      img
-          {
-          width:800px;
-      }
-    }
-}
 
 
 .section-productos {
@@ -354,3 +336,197 @@ background-color:$color-madera-detalle;
     gap: 30px;
 }
 
+
+// VISTA SOBRE NOSOTROS //
+
+
+
+.nosotrossc {
+    .info {
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            color: $color-marron-detalle;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 2.0;
+        }
+    }
+
+    .seccionimg {
+        img {
+            width: 500px;
+        }
+    }
+
+    
+}
+
+.iconos-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 50px;
+    gap: 70px;
+
+    .contenedor-iconos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        /*border: 1px solid black;*/
+
+        i {
+            color: $color-marron-detalle;
+            cursor: pointer;
+        }
+
+        span {
+            color: $color-secundario;
+            font-size: 17px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+    }
+
+    .boton-info {
+        background-color: transparent;
+        border: 2px solid $color-secundario;
+        color: $color-secundario;
+        font-weight: bold;
+        width: 150px;
+    }
+
+    .boton-info:hover {
+        background-color: $color-marron-detalle;
+        color: $color-primario;
+        font-weight: bold;
+    }
+}
+
+
+.cards-mision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px;
+    gap: 70px;
+
+    .info-mision {
+        text-align: center;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h2 {
+            color: $color-marron-detalle;
+            font-weight: bold;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 17px;
+        }
+    }
+
+    .info-mision {
+    }
+
+    .cartas-contenedor {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .carta {
+        border: 1.5px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 300px;
+        text-align: center;
+        gap: 30px;
+        padding: 10px;
+        height: 250px;
+        border-radius: 30px;
+        cursor: pointer;
+
+        p{
+            font-weight: 500;
+        }
+    }
+
+    .carta:hover{
+        background-color: $color-secundario;
+        color: $color-primario;
+        transition: 0.7s;
+    }
+}
+
+.empleados-section {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    text-align: center;
+
+    .empleados-info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px;
+        margin: 30px;
+
+        h2 {
+            color: $color-marron-detalle;
+            font-weight: bold;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 17px;
+        }
+    }
+
+    .empleados-contenedor {
+
+
+        .empleado {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            i {
+                font-size: 50px;
+                color: $color-marron-detalle;
+            }
+
+            .boton-empleados {
+                background-color: $color-marron-detalle; 
+                border: none;
+                color: white;
+                width: 150px;
+                border: 2px solid transparent;
+                font-weight: 600;
+            }
+
+            .boton-empleados:hover {
+                background-color: $color-primario;
+                color: $color-secundario;
+                font-weight: 600;
+                border: 2px solid $color-secundario;
+                transition: 0.5s;
+            }
+        }
+    }
+}
