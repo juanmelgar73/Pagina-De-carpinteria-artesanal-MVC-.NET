@@ -155,43 +155,8 @@ main[role=main] {
   width: 100px;
   margin: 20px;
 }
-.formulario .labelusuario {
-  text-transform: uppercase;
-  text-decoration: underline;
-  margin: 9px;
-}
-.formulario #txtUsuario {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid gray;
-  border-radius: 90px;
-  padding: 5px;
-}
-.formulario .labelcontra {
-  text-transform: uppercase;
-  text-decoration: underline;
-  margin: 9px;
-}
-.formulario #txtContra {
-  display: flex;
-  border: 1px solid gray;
-  border-radius: 90px;
-  padding: 5px;
-}
-.formulario .Notas {
-  text-transform: uppercase;
-  text-decoration: underline;
-  margin: 10px;
-}
-.formulario #txtNotas {
-  border: 1px solid gray;
-  border-radius: 10px;
-  width: 200px;
-  padding: 5px;
-}
-.formulario .imgcliente {
-  width: 800px;
-  height: 600px;
+.formulario .botonformulario {
+  background-color: #8B5E34;
 }
 
 .nosotrossc .info i {
@@ -277,4 +242,8 @@ main[role=main] {
 }
 .estadistica .contenedor .tarjeta:hover {
   transform: translateY(-10px);
+}
+
+.formulario {
+  gap: 30px;
 }
