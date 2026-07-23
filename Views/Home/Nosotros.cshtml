@@ -1,18 +1,137 @@
-﻿<section class="nosotrossc py-5 bg-light">
+﻿@model List<Empleado>
+
+
+<section class="nosotrossc py-5 bg-light">
+
     <div class="container">
         <div class="row">
             <div class="info col-12 col-md-6 col-xl-6">
                 <h2 class="fw-bold text-center">Quienes somos?</h2>
-                <p class="text-dark">Somos una empresa inspirada en construir los mejores productos para vos.<br /> Herramientas y Maquinarias de ultima tecnologia para ofrecer productos con la mejor calidad y al mejor precio.<br />A su vez,contamos con sucursales a lo largo y ancho del pais. La empresa fue fundada por tres personas,Rolan,Yamil,Juan,nuestro proposito siempre va a ser crear piezas unicas que transformen tu hogar.</p>
-                <i class="fa-solid fa-hammer fa-2x mb-1"></i>
-                <i class="fa-solid fa-shield-halved fa-2x mb-1"></i>
-                <i class="fa-solid fa-medal fa-2x mb-1"></i>
-                <i class="fa-solid fa-truck-fast fa-2x mb-1"></i>
-                <button class="btn btn-danger">Saber mas</button>
+                <p class="text-dark">Somos una empresa inspirada en construir los mejores productos para vos.
+                    <br /> Herramientas y Maquinarias de ultima tecnologia para ofrecer productos con la mejor calidad 
+                    y al mejor precio.<br />Nacida del trabajo conjunto de sus tres fundadores —Rolan, Yamil y Juan—, 
+                    nuestra marca cuenta hoy con alcance nacional. Nuestro propósito constante es crear piezas únicas 
+                    que transformen tus espacios.
+                </p>
             </div>
+            
+                
+            
             <div class="seccionimg col-12 col-md-6 col-xl-6">
-                <img src="~/img/carpinter.jpg" />
+                <img src="~/img/about-us.jpg" />
                 </div>
             </div>
     </div>
+
 </section>
+
+
+<hr />
+
+<section class="iconos-info">
+    
+
+    <div class="contenedor-iconos">
+        <i class="fa-solid fa-hammer fa-2x mb-1"></i><span>Artesanal: Calidad garantizada</span>
+        <i class="fa-solid fa-shield-halved fa-2x mb-1"></i><span>Garantía: Resistencia y durabilidad</span>
+        <i class="fa-solid fa-medal fa-2x mb-1"></i><span>Trayectoria: Experiencia en el rubro</span>
+        <i class="fa-solid fa-truck-fast fa-2x mb-1"></i><span>Envíos: Cobertura en todo el país</span>
+    </div>
+        <button class="boton-info btn btn-danger">Comprar ahora</button>
+
+    
+</section>
+
+<hr />
+
+<section class="cards-mision">
+    
+    <div class="info-mision">
+        <h2>Nuestros pilares</h2>
+        <p>Principios que guían nuestro trabajo en taller y atención</p>
+    </div>
+
+
+    <div class="cartas-contenedor">
+
+        <div class="col-12 col-md-4">
+            <div class="card carta">
+                <h3>Misión</h3>
+                <p>
+                    Diseñar y fabricar mobiliario de madera resistente de alta calidad que aporte calidez, diseño y
+                    durabilidad a cada hogar.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="card carta">
+                <h3>Visión</h3>
+                <p>
+                    Ser la marca de mobiliario de referencia nacional, destacándonos por la innovación en nuestros
+                    procesos y la excelencia en la atención.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="card carta">
+                <h3>Compromiso</h3>
+                <p>
+                    Garantizar procesos transparentes, producción responsable y una experiencia de compra cercana en
+                    cada proyecto.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    
+    
+</section>
+
+<section class="empleados-section">
+
+    <div class="empleados-info">
+        <h2>Nuestro equipo de trabajo</h2>
+        <p>El equipo profesional detrás de cada diseño y producción</p>
+    </div>
+
+    <div class="empleados-contenedor d-flex flex-wrap align-items-center justify-content-center">
+
+        @foreach (var items in Model)
+        {
+            
+            
+
+            <div class="w-25 p-3 bg-white m-2 border rounded-3">
+
+                <div class="empleado p-3">
+                    @* VER *@
+                    @* <i class="fa-solid fa-circle-user"></i> *@
+                    @* <i class="fa-regular fa-circle-user"></i> *@
+                    @* <i class="fa-solid fa-user-tie"></i> *@
+
+                    <img src="https://ui-avatars.com/api/?name=@items.nombre+@items.apellido&background=9e5720&color=fff"
+                         class="img-empleado rounded-circle img-fluid mb-3 border"
+                         style="width: 90px; height: 90px;" />
+
+                    <p class="text-black-50">Nombre: @items.nombre</p>
+                    <p class="text-black-50">Apellido: @items.apellido</p>
+                    <p class="text-black-50">Edad: @items.edad</p>
+                    <p class="text-black-50">Especialidad: @items.experto</p>
+                    <p class="text-black-50">Sector: @items.sector</p>
+                    <p class="text-black-50">Disponibilidad: @items.activo</p>
+
+                    <button class="boton-empleados btn btn-outline-primary">Contactar</button>
+
+                </div>
+            </div>
+            
+
+        }
+
+    </div>
+
+</section>
+

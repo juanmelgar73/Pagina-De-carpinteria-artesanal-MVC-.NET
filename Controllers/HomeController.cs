@@ -27,12 +27,11 @@ namespace CarpinteriaArtesanal.Controllers
         }
         public IActionResult Nosotros()
         {
-            return View();
+            var lista = new ListaEmpleados();
+            var Listas_Empleados = lista.GetEmpleados();
+            return View(Listas_Empleados);
         }
-        //public IActionResult Productos()
-        //{
-            
-        //}
+        
         public IActionResult Privacy()
         {
             return View();
