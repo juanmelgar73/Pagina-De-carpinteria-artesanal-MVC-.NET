@@ -250,23 +250,24 @@ background-color:$color-madera-detalle;
 
 
 .section-productos {
-   display: flex;
-   flex-direction: column;
-   padding: 50px;
-        .info-productos {
-            display: flex;
-            flex-direction:column;
-            padding-left: 140px;
-            gap: 10px;
-            margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
 
-            h2{
-               
-            }
-            p{
-                font-size: 15px;
-            }
+    .info-productos {
+        display: flex;
+        flex-direction: column;
+        padding-left: 140px;
+        gap: 10px;
+        margin-bottom: 30px;
+
+        h2 {
         }
+
+        p {
+            font-size: 15px;
+        }
+    }
 
 
     .contenedor-productos {
@@ -276,7 +277,11 @@ background-color:$color-madera-detalle;
                 border: none;
                 color: white;
                 /*font-weight: bold;*/
+                
+                    
+                
             }
+
             .boton-prod:hover {
                 background-color: $color-madera-detalle;
             }
@@ -344,3 +349,8 @@ background-color:$color-madera-detalle;
         }
     }
 }
+
+.formulario {
+    gap: 30px;
+}
+
