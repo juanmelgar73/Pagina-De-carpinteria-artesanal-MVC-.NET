@@ -478,3 +478,137 @@ main[role=main] {
   border: 2px solid #2D2D2D;
   transition: 0.5s;
 }
+
+@media (max-width: 992px) {
+  .navegacion .buscador input {
+    width: 280px;
+  }
+  .section-nosotros .img-contenedor img {
+    width: 100%;
+    max-width: 450px;
+  }
+  .nosotrossc .seccionimg img {
+    width: 100%;
+    max-width: 450px;
+  }
+  .cards-mision {
+    margin: 30px 15px;
+  }
+  .cards-mision .cartas-contenedor {
+    gap: 15px;
+  }
+  .cards-mision .cartas-contenedor .carta {
+    width: 100%;
+    height: auto;
+  }
+  .footer {
+    gap: 20px;
+    padding: 25px 15px;
+  }
+}
+@media (max-width: 768px) {
+  .navegacion .container-fluid {
+    color: white;
+  }
+  .navegacion .container-fluid button {
+    color: white;
+  }
+  .navegacion .buscador {
+    display: none;
+  }
+  .navegacion .boton {
+    display: none;
+  }
+  .portada {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .portada .container {
+    padding: 20px 10px;
+  }
+  .portada .boton {
+    display: inline-block;
+    width: 100%;
+  }
+  .titulo {
+    text-align: center;
+    font-size: 28px;
+  }
+  .section-nosotros {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px;
+  }
+  .section-nosotros .img-contenedor img {
+    width: 100%;
+  }
+  .section-nosotros .info-nosotros h2 {
+    font-size: 32px;
+  }
+  .section-nosotros .info-nosotros p {
+    font-size: 16px;
+  }
+  .nosotrossc .seccionimg img {
+    width: 100%;
+  }
+  .iconos-info {
+    margin: 20px 10px;
+    padding: 15px;
+    gap: 30px;
+  }
+  .iconos-info .contenedor-iconos {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cards-mision {
+    margin: 30px 10px;
+    gap: 30px;
+  }
+  .cards-mision .info-mision {
+    padding: 10px;
+  }
+  .cards-mision .cartas-contenedor {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .cards-mision .cartas-contenedor .carta {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+  .section-productos {
+    padding: 20px 10px;
+  }
+  .section-productos .info-productos {
+    padding-left: 0;
+    text-align: center;
+  }
+  .section-cursos {
+    padding: 50px 15px;
+  }
+  .section-cursos .info-cursos h1 {
+    font-size: 30px;
+  }
+  .section-cursos .botones-cursos {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+  }
+  .formulario {
+    margin-left: 0;
+    padding: 0 15px;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+  }
+  .footer .contenido-footer {
+    text-align: center;
+  }
+  .footer .contenido-footer ul {
+    padding: 0;
+  }
+}

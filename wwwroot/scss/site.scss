@@ -639,3 +639,204 @@ background-color:$color-madera-detalle;
         }
     }
 }
+
+
+// responsive
+
+
+@media (max-width: 992px) {
+
+    // Navegación
+    .navegacion {
+        .buscador input {
+            width: 280px; 
+        }
+    }
+
+    
+    .section-nosotros {
+        .img-contenedor img {
+            width: 100%; 
+            max-width: 450px;
+        }
+    }
+
+    .nosotrossc {
+        .seccionimg img {
+            width: 100%;
+            max-width: 450px;
+        }
+    }
+
+    
+    .cards-mision {
+        margin: 30px 15px;
+
+        .cartas-contenedor {
+            gap: 15px;
+
+            .carta {
+                width: 100%;
+                height: auto; 
+            }
+        }
+    }
+
+    // Footer
+    .footer {
+        gap: 20px;
+        padding: 25px 15px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    
+    .navegacion {
+        .container-fluid {
+            color: white;
+
+            button {
+                color: white;
+            }
+        }
+
+        .buscador {
+            display: none; 
+        }
+
+        .boton {
+            display: none;
+        }
+    }
+
+    
+    .portada {
+        padding: 40px 20px;
+        text-align: center;
+
+        .container {
+            padding: 20px 10px;
+        }
+
+        .boton {
+            display: inline-block;
+            width: 100%;
+        }
+    }
+
+    .titulo {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    
+    .section-nosotros {
+        flex-direction: column; 
+        align-items: center;
+        padding: 20px 15px;
+
+        .img-contenedor img {
+            width: 100%;
+        }
+
+        .info-nosotros {
+            h2 {
+                font-size: 32px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+
+    
+    .nosotrossc {
+        .seccionimg img {
+            width: 100%;
+        }
+    }
+
+    .iconos-info {
+        margin: 20px 10px;
+        padding: 15px;
+        gap: 30px;
+
+        .contenedor-iconos {
+            flex-direction: column; 
+            text-align: center;
+        }
+    }
+
+    
+    .cards-mision {
+        margin: 30px 10px;
+        gap: 30px;
+
+        .info-mision {
+            padding: 10px;
+        }
+
+        .cartas-contenedor {
+            flex-direction: column; 
+            align-items: center;
+            width: 100%;
+
+            .carta {
+                width: 100%;
+                max-width: 350px;
+                height: auto;
+            }
+        }
+    }
+
+    
+    .section-productos {
+        padding: 20px 10px;
+
+        .info-productos {
+            padding-left: 0; 
+            text-align: center;
+        }
+    }
+
+    // Cursos y Talleres
+    .section-cursos {
+        padding: 50px 15px;
+
+        .info-cursos h1 {
+            font-size: 30px;
+        }
+
+        .botones-cursos {
+            flex-direction: column; 
+            align-items: center;
+            gap: 15px;
+            padding: 10px;
+        }
+    }
+
+    
+    .formulario {
+        margin-left: 0;
+        padding: 0 15px;
+    }
+
+    
+    .footer {
+        flex-direction: column; 
+        gap: 25px;
+        text-align: center;
+
+        .contenido-footer {
+            text-align: center;
+
+            ul {
+                padding: 0;
+            }
+        }
+    }
+}
