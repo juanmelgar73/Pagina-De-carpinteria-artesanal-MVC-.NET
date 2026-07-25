@@ -286,23 +286,28 @@ background-color:$color-madera-detalle;
             width: 500px;
         }
     }
+
     .info-nosotros {
         display: flex;
         flex-direction: column;
         gap: 30px;
         text-align: center;
 
-        h2{
+        h2 {
             font-size: 45px;
         }
-        p{
+
+        p {
             font-size: 20px;
             font-weight: bold;
         }
+
         span {
             color: $color-marron-detalle;
         }
     }
+
+    
 }
 
 

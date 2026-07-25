@@ -4,11 +4,6 @@ html, body {
   padding: 0;
 }
 
-.container-fluid {
-    padding-left: 0;
-    padding-right: 0;
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -75,10 +70,12 @@ main[role=main] {
   border: 1px solid gray;
   border-radius: 20px;
   padding: 6px 15px;
+  width: 450px;
 }
 .navegacion > .boton {
   background-color: #8B5E34 !important;
   color: #F7F6F2 !important;
+  border: none;
 }
 .navegacion > .boton:hover {
   background-color: #9e5720 !important;
@@ -164,15 +161,6 @@ main[role=main] {
   background-color: #8B5E34;
 }
 
-.nosotrossc .info i {
-  width: 120px;
-  padding: 20px;
-  color: #E1306C;
-}
-.nosotrossc .seccionimg img {
-  width: 800px;
-}
-
 .section-productos {
   display: flex;
   flex-direction: column;
@@ -247,6 +235,384 @@ main[role=main] {
 }
 .estadistica .contenedor .tarjeta:hover {
   transform: translateY(-10px);
+}
+
+.formulario {
+  gap: 30px;
+}
+
+.nosotrossc .info {
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.nosotrossc .info h2 {
+  color: #9e5720;
+}
+.nosotrossc .info p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2;
+}
+.nosotrossc .seccionimg img {
+  width: 500px;
+}
+
+.iconos-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin: 50px;
+  gap: 70px;
+}
+.iconos-info .contenedor-iconos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  /*border: 1px solid black;*/
+}
+.iconos-info .contenedor-iconos i {
+  color: #9e5720;
+  cursor: pointer;
+}
+.iconos-info .contenedor-iconos span {
+  color: #2D2D2D;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.iconos-info .boton-info {
+  background-color: transparent;
+  border: 2px solid #2D2D2D;
+  color: #2D2D2D;
+  font-weight: bold;
+  width: 150px;
+}
+.iconos-info .boton-info:hover {
+  background-color: #9e5720;
+  color: #F7F6F2;
+  font-weight: bold;
+}
+
+.cards-mision {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px;
+  gap: 70px;
+}
+.cards-mision .info-mision {
+  text-align: center;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cards-mision .info-mision h2 {
+  color: #9e5720;
+  font-weight: bold;
+}
+.cards-mision .info-mision p {
+  font-weight: 500;
+  font-size: 17px;
+}
+.cards-mision .cartas-contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+}
+.cards-mision .carta {
+  border: 1.5px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 300px;
+  text-align: center;
+  gap: 30px;
+  padding: 10px;
+  height: 250px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.cards-mision .carta p {
+  font-weight: 500;
+}
+.cards-mision .carta:hover {
+  background-color: #2D2D2D;
+  color: #F7F6F2;
+  transition: 0.5s;
+}
+
+.empleados-section {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  text-align: center;
+}
+.empleados-section .empleados-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+  margin: 30px;
+}
+.empleados-section .empleados-info h2 {
+  color: #9e5720;
+  font-weight: bold;
+}
+.empleados-section .empleados-info p {
+  font-weight: 500;
+  font-size: 17px;
+}
+.empleados-section .empleados-contenedor .empleado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.empleados-section .empleados-contenedor .empleado i {
+  font-size: 50px;
+  color: #9e5720;
+}
+.empleados-section .empleados-contenedor .empleado .boton-empleados {
+  background-color: #9e5720;
+  border: none;
+  color: white;
+  width: 150px;
+  border: 2px solid transparent;
+  font-weight: 600;
+}
+.empleados-section .empleados-contenedor .empleado .boton-empleados:hover {
+  background-color: #F7F6F2;
+  color: #2D2D2D;
+  font-weight: 600;
+  border: 2px solid #2D2D2D;
+  transition: 0.5s;
+}
+
+.section-cursos {
+  padding: 100px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../IMG/banner-cursos.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.section-cursos .info-cursos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+  color: #F7F6F2;
+}
+.section-cursos .info-cursos span {
+  border: 1px solid #9e5720;
+  padding: 5px;
+  background-color: #9e5720;
+  font-weight: 500;
+  border-radius: 30px;
+  width: 200px;
+}
+.section-cursos .info-cursos h1 {
+  font-size: 45px;
+}
+.section-cursos .info-cursos p {
+  font-size: 17px;
+  font-weight: 500;
+}
+.section-cursos .botones-cursos {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding: 40px;
+  justify-content: center;
+}
+.section-cursos .botones-cursos .boton1 {
+  text-decoration: none;
+  color: #F7F6F2;
+  border: 2px solid #F7F6F2;
+  padding: 7px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+.section-cursos .botones-cursos {
+  /*.boton2 {
+      text-decoration: none;
+      color: $color-primario;
+      border: 2px solid $color-primario;
+      padding: 7px;
+      border-radius: 30px;
+  }*/
+}
+.section-cursos .botones-cursos .boton1:hover {
+  background-color: #F7F6F2;
+  color: #9e5720;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.section-capacitaciones .cursos-contenedor .curso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.section-capacitaciones .cursos-contenedor .boton-cursos {
+  background-color: #9e5720;
+  border: none;
+  color: white;
+  width: 150px;
+  border: 2px solid transparent;
+  font-weight: 600;
+}
+.section-capacitaciones .cursos-contenedor .boton-cursos:hover {
+  background-color: #F7F6F2;
+  color: #2D2D2D;
+  font-weight: 600;
+  border: 2px solid #2D2D2D;
+  transition: 0.5s;
+}
+
+@media (max-width: 992px) {
+  .navegacion .buscador input {
+    width: 280px;
+  }
+  .section-nosotros .img-contenedor img {
+    width: 100%;
+    max-width: 450px;
+  }
+  .nosotrossc .seccionimg img {
+    width: 100%;
+    max-width: 450px;
+  }
+  .cards-mision {
+    margin: 30px 15px;
+  }
+  .cards-mision .cartas-contenedor {
+    gap: 15px;
+  }
+  .cards-mision .cartas-contenedor .carta {
+    width: 100%;
+    height: auto;
+  }
+  .footer {
+    gap: 20px;
+    padding: 25px 15px;
+  }
+}
+@media (max-width: 768px) {
+  .navegacion .container-fluid {
+    color: white;
+  }
+  .navegacion .container-fluid button {
+    color: white;
+  }
+  .navegacion .buscador {
+    display: none;
+  }
+  .navegacion .boton {
+    display: none;
+  }
+  .portada {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .portada .container {
+    padding: 20px 10px;
+  }
+  .portada .boton {
+    display: inline-block;
+    width: 100%;
+  }
+  .titulo {
+    text-align: center;
+    font-size: 28px;
+  }
+  .section-nosotros {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px;
+  }
+  .section-nosotros .img-contenedor img {
+    width: 100%;
+  }
+  .section-nosotros .info-nosotros h2 {
+    font-size: 32px;
+  }
+  .section-nosotros .info-nosotros p {
+    font-size: 16px;
+  }
+  .nosotrossc .seccionimg img {
+    width: 100%;
+  }
+  .iconos-info {
+    margin: 20px 10px;
+    padding: 15px;
+    gap: 30px;
+  }
+  .iconos-info .contenedor-iconos {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cards-mision {
+    margin: 30px 10px;
+    gap: 30px;
+  }
+  .cards-mision .info-mision {
+    padding: 10px;
+  }
+  .cards-mision .cartas-contenedor {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .cards-mision .cartas-contenedor .carta {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+  .section-productos {
+    padding: 20px 10px;
+  }
+  .section-productos .info-productos {
+    padding-left: 0;
+    text-align: center;
+  }
+  .section-cursos {
+    padding: 50px 15px;
+  }
+  .section-cursos .info-cursos h1 {
+    font-size: 30px;
+  }
+  .section-cursos .botones-cursos {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+  }
+  .formulario {
+    margin-left: 0;
+    padding: 0 15px;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+  }
+  .footer .contenido-footer {
+    text-align: center;
+  }
+  .footer .contenido-footer ul {
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=site.css.map */
